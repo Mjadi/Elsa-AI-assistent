@@ -100,8 +100,8 @@ def sendEmail(to, content):
     server.starttls()
      
     # Enable low security in gmail
-    server.login('elsaassistent928@gmail.com', 'arrow:up')
-    server.sendmail('elsaassistent928@gmail.com', to, content)
+    server.login('your email', 'password')
+    server.sendmail('your email', to, content)
     server.close()
 
 def o_file():
@@ -249,7 +249,7 @@ class MainThread(QThread):
                 # avoid()
                 if 'about' in self.text or 'who are you' in self.text or 'who created you' in self.text:
                     # avoid
-                    details = f"Hi i am {ASSISTENT} an artificial intelligence assistence created by mister {OWNER} who is the most genius person on earth and i am currently in development phase!"
+                    details = f"Hi i am {ASSISTENT} an artificial intelligence assistence created by mister {OWNER} who is the most genius person on earth!"
                     r_Request()
                     say(details)
                     # print(details)
